@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Om Takey | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>Om Takey</h1>
+    <p>Fresher | Java Developer </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Fresher Java developer with hands-on experience in Spring Boot and building RESTful microservices.
+      Skilled in Angular for front-end development and proficient in Oracle and MySQL databases. Strong
+      foundation in OOP, with basic knowledge of HTML, CSS, and JavaScript, and a keen interest in developing
+      scalable, full-stack applications.    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Technologies:</strong> Java, Spring Boot, Microservices</li>
+      <li><strong>Web Technologies:</strong> Angular, HTML/CSS, Bootstrap, JavaScript</li>
+      <li><strong>Database:</strong> MySQL, Oracle</li>
+      <li><strong>Tools/IDE:</strong> VS Code, Eclipse IDE, JIRA, Git, GitHub</li>
+      <li><strong>Operating Systems:</strong> Linux, Windows</li>
+      <li><strong>Cloud Platforms:</strong> AWS (IAM, EC2, RDS, Elastic Beanstalk, Lambda, S3)</li>    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <div class="project">
+        <h3>Student Management System</h3>
+        <p>
+          Student Management System – Java Web Application A CRUD-based web application developed to manage student records. The system allows users to add, remove, search, update, and view all student data through a clean and user-friendly interface. Built using Spring Boot and Spring Data JPA for the backend, with MySQL as the database.
+          <br/>
+        <a href="https://github.com/OmTakey21/Basic-Student-Management-System-Using-SpringBoot" target="_blank">View Code</a> 
+        </p>
+      </div>
+      <h3>Counsellor Portal</h3>
+      <p>
+        Counsellor Portal – Spring Boot Web Application A web-based application built using Spring Boot and Thymeleaf to help counsellors manage student enquiries efficiently. The portal includes features like login, logout, dashboard, adding enquiries, viewing and filtering enquiries, and updating enquiry details. Data is stored and managed using MySQL <br/>
+      <a href="https://github.com/OmTakey21/CounsellorPortal" target="_blank">View Code</a> 
+      </p>
+    </div>
+    <div class="project">
+      <h3>API-Data-Fetching</h3>
+      <p>
+        This project demonstrates how to fetch data from an API using JavaScript, handle asynchronous operations, and display the fetched data dynamically on a webpage. The application showcases real-time interaction with a remote server or third-party API to retrieve data, process it, and render it in a user-friendly format. 
+        <br>
+        <a href="https://github.com/OmTakey21/calculator" target="_blank">View Code</a> 
+        <!-- <a href="https://yourusername.github.io/calculator/" target="_blank">Live Demo</a> -->
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering (Information Technology)</strong><br/>Sant Gadge Baba Amravati University Maharashtra, 2020 - 2024</p>
+    <!-- <p><strong>Certifications:</strong> Java Programming – Coursera | DSA in Java – Udemy</p> -->
+
+    <p><strong>XII</strong><br/>Bharatiya Mahavidyalaya Amravati Maharashtra, 2019 - 2020</p>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: omtakey18@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/omtakey/" target="_blank">linkedin.com/in/omtakey</a></p>
+    <p>GitHub: <a href="https://github.com/OmTakey21" target="_blank">github.com/OmTakey21</a></p>
+    <a href="resume.pdf" download class="btn" target="_blank">Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Om Takey</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
